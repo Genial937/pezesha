@@ -18,5 +18,3 @@ use App\Http\Controllers\MarvelController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::get('/marvel/characters', [MarvelController::class, 'index']);
